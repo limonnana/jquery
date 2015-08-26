@@ -4,7 +4,9 @@ $(document).ready(function(){
    memory = 0;
    display = '';
   // totalResult = 0;
-   var numbersString = new Array();
+   numbersString = new Array();
+   auxNumber = 0;
+   auxString = '';
 
   $('#buttonAdd').click(function(){
      add();
@@ -22,9 +24,10 @@ $(document).ready(function(){
     cE();
   });
 
-  function total(memory){
+  function total(){
 
-   $('#result').html(memory);
+	  add();
+	  $('#result').html(memory);
   }
 
   function cE(){
@@ -36,27 +39,41 @@ $(document).ready(function(){
    
   function add(){
     
-    var auxNumber = 0;
     var inputString = $('#number1').val();
 
    for(i=0;i<inputString.length;i++){
 
-      if(
+      var c = inputString.charAt(i);
+      
+	   if(isNaN(c)){
+		   
+		   auxNumber = parseInt(auxString);
+		   if(c=='+'){
+			   memory = memory + auxNumber;
+		   }if(c=='-'){
+			   memory = memory - auxNumber;
+		   }
+    	  
+    	  
+      }else{
+    	  auxString = auxString + c;
+    	  
+      }
 
    
    }
 
 
 
-   var number1 = parseInt($('#number1').val());
+   //var number1 = parseInt($('#number1').val());
    
-    memory = memory + number1;
+   // memory = memory + number1;
     
-    display = display + number1 + '+';
-    numbersString = numbersString + number1;
+   // display = display + number1 + '+';
+   // numbersString = numbersString + number1;
    
     //$('#number1').val("");
-    $('#display').html(display);
+   // $('#display').html(memory);
    }
   
    function rest(){
