@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function add() {
+
+var number1 = parseInt(document.forms["formulario"]["number1"].value, 10);                   
+var number2 = parseInt(document.forms["formulario"]["number2"].value, 10);
+var resultado =  document.getElementById("result")
+var resolt;
+
+resolt = number1 + number2;
+
+//document.onload = function miFuncion{resultado.innerHTML = resolt};
+
+resultado.innerHTML = resolt;
+
+return resolt.toString();
+
+}
+</script>
+
+</head>
+<body>
+
+<img src="logo.png" width="150">
+
+<br><br>
+
+<h1>JavaScript Can Validate Input</h1>
+
+<form action="index.html" name="formulario">
+<br>
+
+Number 1 <input type="text"  name="number1">
+<br> <br>
+
+Number 2 <input type="text"  name="number2">
+<br> <br>
+
+ &nbsp; &nbsp; &nbsp; <p id="result"></p>
+<br><br>
+
+<button type="button" onclick="add()">Add</button>
+
+</form>
+
+
+
+
+
+</body>
+</html> 

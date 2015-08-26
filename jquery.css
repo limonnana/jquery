@@ -1,0 +1,45 @@
+<style>
+
+#wrapper {
+		width:355px;
+		margin:30px auto;
+		border:1px solid #bbb;
+		padding:10px;
+	}
+
+#section {
+    width:350px;
+    float:left;
+    padding:10px; 
+    border:1px solid #bbb;
+   
+}
+#result {
+   padding-left: 35px;
+}
+input[type="text"] {
+  
+  font-family: sans-serif;
+  font-size: 12px;
+  border-radius: none;
+}
+body {
+    font-family: Comic Sans, Courier New, monospace;
+    color:black;
+    font-size: 95%;
+}
+.button {
+    background-color: #E3E1B8; 
+    padding: 2px 4px;
+    font: 13px sans-serif;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-color: #aaa #444 #444 #aaa;
+    color: #000;
+}
+.button.CE, .button.total{
+    background-color: #f7e3e3; 
+    color: #000;
+    padding:1em;
+}
+</style>
