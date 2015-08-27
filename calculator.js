@@ -1,9 +1,62 @@
 
 $(document).ready(function(){
 
-   memory = 0;
+   total = 0;
    display = '';
-  // totalResult = 0;
+   
+  
+   $('#buttonTotal').click(function(){
+	   
+	   var inputString =  inputString = $('#number1').val();
+		   
+	   inputStringIterator(inputString);
+	  });
+   
+   
+   
+   
+   function inputStringIterator(inputString){
+	   
+	   var arrayPlus = inputString.split('+') ;
+	   var operation = '';
+	   var booleanNumberComplete;
+	   var arrayMinus = new Array();
+	   
+	   for(i=0;i<arrayPlus.length;i++){
+		   
+		   arrayMinus = arrayPlus[i].split('-');
+		   
+		   
+	   }
+	   
+	   
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   /*
+   
+   // totalResult = 0;
    numbersString = new Array();
    auxNumber = 0;
    auxString = '';
@@ -82,6 +135,8 @@ $(document).ready(function(){
    var result = number1 - number2;
    $('#result').html(result);
    }
+   
+   */
 
 });
 
